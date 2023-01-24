@@ -3,7 +3,8 @@
 :root {
   --nav-white: #fff;
   --nav--blue: #4287f5;
-  --nav-dark: rgba(255,255,255, 0)
+  --nav-dark: rgba(255,255,255, 0);
+  --header--font: #fff;
 }
 
 body {
@@ -35,6 +36,12 @@ nav li {
   height: 6rem !important;
 }
 
+@media(max-width: 768px){
+  .navbar-brand{
+    width: 7rem;
+  }
+}
+
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus{
   border-top: 0.1875rem solid var(--nav--blue);
 }
@@ -55,6 +62,10 @@ nav li {
 
 .main-info {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -62,5 +73,12 @@ nav li {
 }
 
 .main-info h1 {
-  color: var(--nav-white);
+  color: var(--header--font);
+  font-size: 7rem;
+}
+
+@media(max-width: 768px) {
+  .main-info h1 {
+    font-size: 3rem !important;
+  }
 }

@@ -1,11 +1,12 @@
 import React from "react";
-import myLogo from "../myLogo.png"
+import myLogo from "../myLogo.png";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
-        <a className="navbar-brand" href="#"><img src={myLogo} alt="my custom logo" />
+        <a className="navbar-brand" href="#">
+          <img src={myLogo} alt="my custom logo" />
         </a>
         <button
           className="navbar-toggler"
@@ -20,15 +21,31 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav ml-auto">
-            <a className="nav-link active" href="#">
-              Home <span className="sr-only">(current)</span>
-            </a>
-            <a className="nav-link" href="#">
-              Features
-            </a>
-            <a className="nav-link" href="#">
-              Pricing
-            </a>
+            <li className="nav-item active">
+              <a className="nav-link " href="#">
+                Home <span className="sr-only">(current)</span>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                About Me
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Projects
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Resume
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Contact
+              </a>
+            </li>
           </div>
         </div>
       </div>

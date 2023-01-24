@@ -86,7 +86,6 @@ nav li {
 /* About Custom Styling */
 
 .custom_about_image {
- 
   height: 50vh;
   object-fit: cover;
   width: 80%;
@@ -95,7 +94,6 @@ nav li {
 
 .custom_about_text {
   font-family: "Raleway", sans-serif;
-  width: 50vw;
   text-align: center;
   font-size: 2rem
 }
@@ -105,3 +103,5 @@ nav li {
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.0375rem;
 }
+
+/* Projects Custom Styling */

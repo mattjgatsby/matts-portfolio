@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 
 :root {
   --nav-white: #fff;
   --nav--blue: #4287f5;
-  --nav-dark: rgba(255,255,255, 0);
+  --nav-dark: rgba(255, 255, 255, 0);
   --header--font: #fff;
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 /* Menu Link Custom Style */
@@ -20,7 +20,6 @@ nav a.nav-link {
 
 nav li {
   text-transform: uppercase;
-
 }
 
 .navbar-nav > li > a {
@@ -36,13 +35,14 @@ nav li {
   height: 6rem !important;
 }
 
-@media(max-width: 768px){
-  .navbar-brand{
+@media (max-width: 768px) {
+  .navbar-brand {
     width: 7rem;
   }
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus{
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
   border-top: 0.1875rem solid var(--nav--blue);
 }
 
@@ -77,8 +77,31 @@ nav li {
   font-size: 5rem;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .main-info h1 {
     font-size: 3rem !important;
   }
+}
+
+/* About Custom Styling */
+
+.custom_about_image {
+ 
+  height: 50vh;
+  object-fit: cover;
+  width: 80%;
+  border-radius: 50%
+}
+
+.custom_about_text {
+  font-family: "Raleway", sans-serif;
+  width: 50vw;
+  text-align: center;
+  font-size: 2rem
+}
+
+.header_font_size {
+  font-size: 4rem;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.0375rem;
 }

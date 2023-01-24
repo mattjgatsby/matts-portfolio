@@ -54,7 +54,7 @@ nav li {
 
 .header-wraper {
   position: relative;
-  background: url(bgImage.jpg) no-repeat;
+  background: url(bgImage.gif) no-repeat;
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -74,7 +74,7 @@ nav li {
 
 .main-info h1 {
   color: var(--header--font);
-  font-size: 7rem;
+  font-size: 5rem;
 }
 
 @media(max-width: 768px) {
